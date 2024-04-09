@@ -165,7 +165,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 xl:text-5xl sm:text-xl xl:ml-[120px]"
+            className="h2 xl:text-5xl sm:text-xl xl:ml-[120px] sm:mt-[-40px]"
           >
             Convertir <span className="text-accent">la visión en realidad</span>{" "}
             con código y diseño.
@@ -281,8 +281,8 @@ const About = () => {
                 </div>
               );
             })}
-            <button className="xl:ml-[180px] sm:text-sm mt-0 bg-accent hover:bg-secondary text-white hover:text-accent font-bold py-2 px-4 rounded-full">
-              <a href="/Ariel.pdf" download>
+            <button className="xl:ml-[180px] sm:text-sm mt-0 bg-accent hover:bg-secondary text-white hover:text-accent font-bold py-2 px-4 rounded-full z-10">
+              <a href="/Ariel.pdf" className="xl:z-20" download>
                 Descargar CV
               </a>
             </button>
