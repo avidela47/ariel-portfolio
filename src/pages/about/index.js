@@ -188,7 +188,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8gi"
+            className="md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience*/}
