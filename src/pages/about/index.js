@@ -165,7 +165,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 xl:text-5xl sm:text-xl xl:ml-[120px] sm:mt-[-60px]"
+            className="h2 xl:text-5xl sm:text-xl xl:ml-[120px] sm:mt-[-80px]"
           >
             Convertir <span className="text-accent">la visión en realidad</span>{" "}
             con código y diseño.
