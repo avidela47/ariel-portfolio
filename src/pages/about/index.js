@@ -281,7 +281,7 @@ const About = () => {
                 </div>
               );
             })}
-            <button className="xl:ml-[180px] sm:text-sm mt-0 bg-accent hover:bg-secondary text-white hover:text-accent font-bold py-2 px-4 rounded-full z-10">
+            <button className="xl:ml-[180px] sm:text-sm mt-0 bg-accent hover:bg-secondary text-white hover:text-accent font-bold py-2 px-4 rounded-full xl:z-10">
               <a href="/Ariel.pdf" className="xl:z-20" download>
                 Descargar CV
               </a>
