@@ -89,12 +89,12 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px] sm:mt-[-80px] xl:mt-10"
+      className="h-[280px] sm:h-[480px] sm:mt-[-100px] xl:mt-10"
     >
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-6 sm:mt-[100px] xl:mt-0 xl:grid-cols-2 xl:grid-rows-2 xl:gap-4 cursor-pointer">
+            <div className="grid sm:flex-col sm:gap-6 sm:mt-[80px] xl:mt-0 xl:grid-cols-2 xl:grid-rows-2 xl:gap-4 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
                   <div
@@ -108,6 +108,7 @@ const WorkSlider = () => {
                         width={500}
                         height={300}
                         alt={image.title}
+                        className="w-full xl:h-[190px] sm:h-[75px]"
                       />
                       {/* image */}
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
