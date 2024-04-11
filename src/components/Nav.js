@@ -2,22 +2,22 @@
 import {
   HiHome,
   HiUser,
-  HiViewColumns,
   HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
+import { PiCertificateDuotone } from "react-icons/pi";
+import { GoProjectSymlink } from "react-icons/go";
 
 // nav data
 export const navData = [
   { name: "Home", path: "/", icon: <HiHome /> },
   { name: "Perfil", path: "/about", icon: <HiUser /> },
   { name: "Servicios", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "Proyectos", path: "/work", icon: <HiViewColumns /> },
+  { name: "Proyectos", path: "/work", icon: <GoProjectSymlink /> },
   {
     name: "Certificados",
-    path: "/testimonials",
-    icon: <HiChatBubbleBottomCenterText />,
+    path: "/certificates",
+    icon: <PiCertificateDuotone />,
   },
   {
     name: "Contacto",
