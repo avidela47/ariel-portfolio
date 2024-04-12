@@ -21,12 +21,12 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="h2 text-center xl:mb-12 sm:mb-[70px]"
           >
             Contac<span className="text-accent">tame</span>!
           </motion.h2>
           <motion.div
-          className="flex items-center z-[100] mb-2 xl:ml-[60px] sm:ml-2 sm:text-sm"
+          className="flex items-center z-[100] xl:mb-2 sm:mb-16 xl:ml-[60px] sm:ml-2 sm:text-sm"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -47,7 +47,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-4 w-full mx-auto z-50"
+            className="flex-1 flex flex-col gap-4 w-full mx-auto z-50 xl:mb-0 sm:mb-16"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
