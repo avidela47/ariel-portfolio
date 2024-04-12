@@ -1,5 +1,6 @@
 // components
 import HireMe from "../../components/HireMe";
+import { WhatsappIcon } from "../../components/Icon";
 
 // icons
 import { BsArrowRight } from "react-icons/bs";
@@ -24,6 +25,22 @@ const Contact = () => {
           >
             Contac<span className="text-accent">tame</span>!
           </motion.h2>
+          <motion.div
+          className="flex items-center z-[100] mb-2 xl:ml-[60px] sm:ml-2 sm:text-sm"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <motion.a
+            href="https://api.whatsapp.com/send?phone=3512890110&text=Hola"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-9 mr-3"
+          >
+            <WhatsappIcon className="flex items-center justify-center" />
+          </motion.a>
+          +54 9 351 289-0110
+        </motion.div>
           {/* form */}
           <motion.form
             variants={fadeIn("up", 0.4)}
@@ -49,7 +66,7 @@ const Contact = () => {
         </div>
       </div>
       <div>
-      <HireMe />
+      <HireMe />      
       </div>      
     </div>    
   );
