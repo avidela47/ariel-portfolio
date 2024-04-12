@@ -1,5 +1,5 @@
 // components
-import Circles from "../../components/Circles";
+import HireMe from "../../components/HireMe";
 
 // icons
 import { BsArrowRight } from "react-icons/bs";
@@ -30,7 +30,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto z-50"
+            className="flex-1 flex flex-col gap-4 w-full mx-auto z-50"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
@@ -48,7 +48,10 @@ const Contact = () => {
           </motion.form>
         </div>
       </div>
-    </div>
+      <div>
+      <HireMe />
+      </div>      
+    </div>    
   );
 };
 
