@@ -47,7 +47,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-4 w-full mx-auto z-50 xl:mb-0 sm:mb-16"
+            className="flex-1 flex flex-col gap-4 w-full mx-auto z-50 xl:mb-0 sm:mb-[60px]"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
