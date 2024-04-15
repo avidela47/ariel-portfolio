@@ -26,7 +26,7 @@ const Contact = () => {
             Contac<span className="text-accent">tame</span>!
           </motion.h2>
           <motion.div
-          className="flex items-center z-[100] xl:mb-2 sm:mb-16 xl:ml-[60px] sm:ml-2 sm:text-sm"
+          className="flex items-center xl:mb-3 sm:mb-16 xl:ml-[70px] sm:ml-2 sm:text-sm xl:z-10"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
