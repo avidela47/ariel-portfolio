@@ -45,7 +45,7 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/reproductor.jpeg",
+          path: "/bikezz.jpeg",
         },
         {
           title: "title",
