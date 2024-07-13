@@ -5,39 +5,23 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/birmghamburger.png",
+          img: "/birmghamburger.png",
+          path: "https://birmghamburger.vercel.app/"
         },
         {
           title: "title",
-          path: "/saboresargentinos.png",
+          img: "/saboresargentinos.png",
+          path: "https://avidela47.github.io/saboresargentinos/"
         },
         {
           title: "title",
-          path: "/valhallawine.png",
+          img: "/valhallawine.png",
+          path: "https://avidela47.github.io/valhallawinesvidela/"
         },
         {
           title: "title",
-          path: "/selflick.png",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/cafenormandia.png",
-        },
-        {
-          title: "title",
-          path: "/diabolo.jpeg",
-        },
-        {
-          title: "title",
-          path: "/miportfolio.png",
-        },
-        {
-          title: "title",
-          path: "/horus.jpeg",
+          img: "/selflick.png",
+          path: "https://selflick.vercel.app/"
         },
       ],
     },
@@ -45,19 +29,43 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/bikezz.jpeg",
+          img: "/cafenormandia.png",
+          path: "https://normandiacafe.vercel.app/"
         },
         {
           title: "title",
-          path: "/pet.png",
+          img: "/diabolo.jpeg",
         },
         {
           title: "title",
-          path: "/tutti.png",
+          img: "/miportfolio.png",
+          path: "https://ariel-videla-portfolio.vercel.app/"
         },
         {
           title: "title",
-          path: "/coffee.png",
+          img: "/horus.jpeg",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          img: "/bikezz1.jpeg",
+          path: "https://bikezz-eta.vercel.app/"
+        },
+        {
+          title: "title",
+          img: "/pet.png",
+          path: "https://practico-integrador-grupo5-pet-shop.vercel.app/"
+        },
+        {
+          title: "title",
+          img: "/tutti.png",
+        },
+        {
+          title: "title",
+          img: "/coffee.png",
         },
       ],
     },
@@ -101,16 +109,21 @@ const WorkSlider = () => {
                     className="relative overflow-hidden flex items-center justify-center group"
                     key={index}
                   >
-                    <div className="flex items-center justify-center relative overflow-hidden group xl:mt-[27px] rounded-xl">
+                    <a
+                      href={image.path || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center relative overflow-hidden group xl:mt-[27px] rounded-xl"
+                    >
                       {/* image */}
                       <Image
-                        src={image.path}
+                        src={image.img}
                         width={500}
                         height={300}
                         alt={image.title}
                         className="w-full xl:h-[190px] sm:h-[75px]"
                       />
-                      {/* image */}
+                      {/* overlay */}
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       {/* title */}
                       <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
@@ -127,7 +140,7 @@ const WorkSlider = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 );
               })}
