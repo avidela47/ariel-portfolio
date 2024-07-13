@@ -25,22 +25,7 @@ const Contact = () => {
           >
             Contac<span className="text-accent">tame</span>!
           </motion.h2>
-          <motion.div
-          className="flex items-center xl:mb-3 sm:mb-16 xl:ml-[70px] sm:ml-2 sm:text-sm xl:z-10"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <motion.a
-            href="https://api.whatsapp.com/send?phone=3512890110&text=Hola"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-9 mr-3"
-          >
-            <WhatsappIcon className="flex items-center justify-center" />
-          </motion.a>
-          +54 9 351 289-0110
-        </motion.div>
+          
           {/* form */}
           <motion.form
             variants={fadeIn("up", 0.4)}
@@ -64,9 +49,25 @@ const Contact = () => {
             </button>
           </motion.form>
         </div>
+        <motion.div
+          className="flex items-center xl:mb-2 sm:mb-1 xl:ml-[70px] sm:ml-2 sm:text-[12px] xl:text-lg xl:z-[30]"
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <motion.a
+            href="https://api.whatsapp.com/send?phone=3512890110&text=Hola"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-9 mr-3"
+          >
+            <WhatsappIcon className="flex items-center justify-center" />
+          </motion.a>
+          +54 9 351 289-0110
+        </motion.div>
       </div>
       <div>
-      <HireMe />      
+      <HireMe />
       </div>      
     </div>    
   );
