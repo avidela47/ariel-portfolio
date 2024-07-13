@@ -8,37 +8,41 @@ import { fadeIn } from "../../../variants";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      formData,
-      process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-    )
-    .then((result) => {
-      console.log(result.text);
-      alert("Mensaje enviado con éxito!");
-    }, (error) => {
-      console.log(error.text);
-      alert("Hubo un error al enviar el mensaje.");
-    });
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        formData,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Mensaje enviado con éxito!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Hubo un error al enviar el mensaje.");
+        }
+      );
 
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
@@ -54,7 +58,7 @@ const Contact = () => {
           >
             Contac<span className="text-accent">tame</span>!
           </motion.h2>
-          
+
           <motion.form
             variants={fadeIn("up", 0.4)}
             initial="hidden"
@@ -74,21 +78,21 @@ const Contact = () => {
                 required
               />
               <input
-                type="email"
-                name="email"
-                value={formData.email}
+                type="text"
+                name="subject"
+                value={formData.subject}
                 onChange={handleChange}
-                placeholder="Email"
+                placeholder="Asunto"
                 className="input"
                 required
               />
             </div>
             <input
-              type="text"
-              name="subject"
-              value={formData.subject}
+              type="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
-              placeholder="Asunto"
+              placeholder="Email"
               className="input"
               required
             />
@@ -130,10 +134,9 @@ const Contact = () => {
       </div>
       <div>
         <HireMe />
-      </div>      
-    </div>    
+      </div>
+    </div>
   );
 };
 
 export default Contact;
-
