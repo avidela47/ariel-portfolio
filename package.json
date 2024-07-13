@@ -10,7 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^13.4.4",
     "framer-motion": "^10.12.16",
     "next": "13.4.3",
     "next-google-fonts": "^2.2.0",
