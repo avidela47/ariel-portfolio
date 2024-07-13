@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.16",
     "next": "13.4.3",
     "next-google-fonts": "^2.2.0",
