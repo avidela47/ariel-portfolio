@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import HireMe from "../../components/HireMe";
-import { WhatsappIcon } from "../../components/Icon";
+import { WhatsappIcon, WhatsappIconQr } from "../../components/Icon";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variants";
@@ -58,7 +58,7 @@ const Contact = () => {
           >
             Contac<span className="text-accent">tame</span>!
           </motion.h2>
-
+        
           <motion.form
             variants={fadeIn("up", 0.4)}
             initial="hidden"
@@ -131,6 +131,9 @@ const Contact = () => {
           </motion.a>
           +54 9 351 289-0110
         </motion.div>
+        <motion.div className="flex items-center justify-center mt-[200px] ml-[-130px]">
+          <WhatsappIconQr className="flex items-center justify-center" />
+        </motion.div>     
       </div>
       <div>
         <HireMe />
