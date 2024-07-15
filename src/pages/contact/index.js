@@ -116,7 +116,7 @@ const Contact = () => {
           </motion.form>
         </div>
         <motion.div
-          className="flex items-center xl:mb-2 sm:mb-1 xl:ml-[70px] sm:ml-2 sm:text-[12px] xl:text-lg xl:z-[30]"
+          className="flex items-center xl:mb-2 sm:mb-1 xl:ml-[70px] sm:ml-2 sm:text-[10px] xl:text-lg xl:z-[30]"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -129,11 +129,8 @@ const Contact = () => {
           >
             <WhatsappIcon className="flex items-center justify-center" />
           </motion.a>
-          +54 9 351 289-0110
-        </motion.div>
-        <motion.div className="flex items-center justify-center mt-[200px] ml-[-130px]">
-          <WhatsappIconQr className="flex items-center justify-center" />
-        </motion.div>     
+          351-289-0110
+        </motion.div> 
       </div>
       <div>
         <HireMe />
