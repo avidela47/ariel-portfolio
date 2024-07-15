@@ -129,7 +129,7 @@ const Contact = () => {
           >
             <WhatsappIcon className="flex items-center justify-center" />
           </motion.a>
-          351<br/>2890110
+          +54 (351)2890110
         </motion.div> 
       </div>
       <div>
