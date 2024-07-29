@@ -20,7 +20,7 @@ const Header = () => {
             height={48}
             alt=""
             priority={true}
-            className="sm:mt-[-150px] sm:ml-[-60px] xl:mt-6 xl:ml-0 md:mt-[-160px]"
+            className="sm:mt-[-120px] sm:ml-[-60px] xl:mt-6 xl:ml-0 md:mt-[-160px]"
           />
         </Link>
         {/* Socials */}

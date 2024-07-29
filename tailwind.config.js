@@ -15,10 +15,10 @@ module.exports = {
       },
     },
     screens: {
-      sm: '390px',
-      md: '768px',
-      lg: '960px',
-      xl: '1366px',
+      sm: '640px',   // Small screens (e.g., phones)
+      md: '768px',   // Medium screens (e.g., tablets)
+      lg: '1024px',  // Large screens (e.g., laptops)
+      xl: '1280px',  // Extra large screens (e.g., desktops)
     },
     extend: {
       colors: {
