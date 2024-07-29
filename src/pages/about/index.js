@@ -159,7 +159,7 @@ const About = () => {
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center xl:mt-0 sm:mt-[-60px]">
+        <div className="flex-1 flex flex-col justify-center xl:mt-0 sm:mt-[-75px]">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
