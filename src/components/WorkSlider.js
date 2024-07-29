@@ -5,6 +5,11 @@ export const workSlides = {
       images: [
         {
           title: "title",
+          img: "/selflick1.png",
+          path: "https://selflick.com.ar/"
+        },
+        {
+          title: "title",
           img: "/birmghamburger.png",
           path: "https://birmghamburger.vercel.app/"
         },
@@ -17,11 +22,6 @@ export const workSlides = {
           title: "title",
           img: "/valhallawine.png",
           path: "https://avidela47.github.io/valhallawinesvidela/"
-        },
-        {
-          title: "title",
-          img: "/selflick.png",
-          path: "https://selflick.vercel.app/"
         },
       ],
     },
