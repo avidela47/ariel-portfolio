@@ -133,7 +133,6 @@ const Contact = () => {
         </motion.div> 
       </div>
       <div>
-        <HireMe />
       </div>
     </div>
   );
