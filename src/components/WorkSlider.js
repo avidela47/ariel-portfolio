@@ -15,13 +15,13 @@ export const workSlides = {
         },
         {
           title: "title",
-          img: "/saboresargentinos.png",
-          path: "https://avidela47.github.io/saboresargentinos/"
+          img: "/bikezz1.jpeg",
+          path: "https://bikezz-eta.vercel.app/"
         },
         {
           title: "title",
-          img: "/valhallawine.png",
-          path: "https://avidela47.github.io/valhallawinesvidela/"
+          img: "/masamadre.jpeg",
+          path: "https://masa-madre-panaderia.netlify.app/"
         },
       ],
     },
@@ -29,8 +29,8 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          img: "/cafenormandia.png",
-          path: "https://normandiacafe.vercel.app/"
+          img: "/pet.png",
+          path: "https://practico-integrador-grupo5-pet-shop.vercel.app/"
         },
         {
           title: "title",
@@ -38,8 +38,8 @@ export const workSlides = {
         },
         {
           title: "title",
-          img: "/miportfolio.png",
-          path: "https://ariel-videla-portfolio.vercel.app/"
+          img: "/coffee.png",
+          title: "title",
         },
         {
           title: "title",
@@ -51,21 +51,21 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          img: "/bikezz1.jpeg",
-          path: "https://bikezz-eta.vercel.app/"
+          img: "/saboresargentinos.png",
+          path: "https://avidela47.github.io/saboresargentinos/"
         },
         {
           title: "title",
-          img: "/pet.png",
-          path: "https://practico-integrador-grupo5-pet-shop.vercel.app/"
+          img: "/cafenormandia.png",
+          path: "https://normandiacafe.vercel.app/"
         },
         {
           title: "title",
           img: "/tutti.png",
         },
         {
-          title: "title",
-          img: "/coffee.png",
+          img: "/miportfolio.png",
+          path: "https://ariel-videla-portfolio.vercel.app/"
         },
       ],
     },
