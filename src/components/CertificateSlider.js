@@ -61,6 +61,13 @@ export const certificateData = [
     path:
       "/Primerosdesarrollofrontend.jpg",
   },
+  {
+    image: "/codoacodo.png",
+    name: "Codo a Codo 4.0 2024",
+    position: "Desarrollo Web (JavaScript - Node.js)",
+    path:
+      "/Diploma_CAC.jpg",
+  },
 ];
 
 // import swiper react components
@@ -117,7 +124,7 @@ const CertificateSlider = () => {
                 </div>
                 {/* message */}
                 <div className="xl:text-lg text-center md:text-left xl:w-full sm:w-[200px]">
-                <Image src={person.path} width={420} height={500} alt="" />
+                <Image src={person.path} width={380} height={500} alt="" />
                 </div>
               </div>
             </div>
