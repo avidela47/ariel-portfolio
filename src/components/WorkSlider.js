@@ -10,8 +10,8 @@ export const workSlides = {
         },
         {
           title: "title",
-          img: "/birmghamburger.png",
-          path: "https://birmghamburger.vercel.app/"
+          img: "/burger.png",
+          path: "https://burger-burghs.netlify.app/"
         },
         {
           title: "title",
@@ -61,7 +61,8 @@ export const workSlides = {
         },
         {
           title: "title",
-          img: "/tutti.png",
+          img: "/birmghamburger.png",
+          path: "https://birmghamburger.vercel.app/"
         },
         {
           img: "/miportfolio.png",
