@@ -200,7 +200,7 @@ export const services = [
 
 export const experience = [
   {
-    title: "Desarrollo web y sistemas",
+    title: "Web & Systems Developer | E-commerce Strategist",
     place: "ITELSA SAS",
     period: "Actualidad",
   },
