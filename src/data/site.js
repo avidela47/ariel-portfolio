@@ -82,13 +82,30 @@ export const aiTools = [
 // destacados: proyectos propios. webs: sitios publicados.
 export const featured = [
   {
+    title: "Gestión de luminarias",
+    description:
+      "Sistema de gestión para una empresa de iluminación: componentes, recetas (BOM), fabricación, órdenes de trabajo, presupuestos y stock.",
+    tags: ["Next.js", "MongoDB", "NextAuth"],
+    // repo privado: https://github.com/avidela47/gestion-luminarias (el link daría 404 a los visitantes)
+    image: "/projects/luminarias.png",
+    note: "Repositorio privado",
+  },
+  {
+    title: "Ferretería Ríos",
+    description:
+      "Sistema de gestión para ferretería: catálogo, stock, ventas, fiados, compras, presupuestos, gastos y reportes.",
+    tags: ["Next.js", "MongoDB", "NextAuth"],
+    repo: "https://github.com/avidela47/ferreteria-rios",
+    image: "/projects/ferreteria.png",
+  },
+  {
     title: "Prode Mundial 2026",
     description:
-      "Aplicación full-stack de pronósticos para el Mundial 2026: cada usuario carga sus resultados y compite en el ranking.",
-    tags: ["React", "Node.js", "Vercel"],
+      "Aplicación de pronósticos para el Mundial 2026: fixture completo, carga de apuestas, resultados y tabla de posiciones.",
+    tags: ["Next.js", "Zustand", "MongoDB"],
     href: "https://prode-mundial-2026-virid.vercel.app/",
     repo: "https://github.com/avidela47/prode-mundial-2026",
-    emoji: "⚽",
+    image: "/projects/prode.png",
   },
   {
     title: "TuttiTube",
@@ -96,14 +113,6 @@ export const featured = [
       "Juego musical con ruleta: sorteá letra, sexo e idioma para generar un artista al azar. Empaquetado como app Android.",
     tags: ["JavaScript", "Capacitor", "Android"],
     image: "/tutti.png",
-  },
-  {
-    title: "Gestión de luminarias",
-    description:
-      "Sistema de gestión de iluminación para uso empresarial, desarrollado para una empresa del rubro.",
-    tags: ["React", "Vite"],
-    emoji: "💡",
-    note: "Proyecto privado",
   },
 ];
 

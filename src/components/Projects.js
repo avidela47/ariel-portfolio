@@ -64,7 +64,7 @@ const Projects = () => (
     title="Cosas que construí."
     intro="Aplicaciones propias y sitios que publiqué para negocios reales."
   >
-    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-5 md:grid-cols-2">
       {featured.map((p, i) => (
         <FeaturedCard key={p.title} p={p} i={i} />
       ))}
