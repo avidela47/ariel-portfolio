@@ -121,12 +121,12 @@ const Hero = () => {
           <div className="absolute -inset-3 sm:-inset-6 rounded-[2.5rem] bg-accent-gradient opacity-25 blur-3xl" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-gradient-to-b from-white/[0.08] to-white/[0.02] animate-float">
             <Image
-              src="/avatar.png"
+              src="/avatar.jpg"
               alt={`Retrato de ${profile.name}`}
               fill
               priority
               sizes="(max-width: 1024px) 80vw, 420px"
-              className="object-contain object-bottom"
+              className="object-cover object-top"
             />
           </div>
         </motion.div>
