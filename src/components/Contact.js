@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import Section from "./Section";
 import Reveal from "./Reveal";
 import { profile } from "../data/site";
@@ -18,12 +17,20 @@ const Contact = () => {
     e.preventDefault();
     setStatus("sending");
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        form,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-      );
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          name: form.name,
+          email: form.email,
+          subject: form.subject || "Mensaje desde el portfolio",
+          message: form.message,
+          from_name: "Portfolio Ariel Videla",
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) throw new Error(data.message || "error");
       setForm(empty); // solo se limpia si se envió bien
       setStatus("ok");
     } catch (err) {

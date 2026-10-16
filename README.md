@@ -18,15 +18,11 @@ npm run dev                  # http://localhost:3000
 
 ## Variables de entorno
 
-El formulario de contacto usa [EmailJS](https://www.emailjs.com/). Cargá estas variables en `.env.local` y en Vercel (Project → Settings → Environment Variables):
+El formulario de contacto usa [Web3Forms](https://web3forms.com/). Cargá esta variable en `.env.local` (o en Vercel → Settings → Environment Variables):
 
 | Variable | Descripción |
 |---|---|
-| `NEXT_PUBLIC_EMAILJS_SERVICE_ID` | ID del servicio |
-| `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID` | ID de la plantilla |
-| `NEXT_PUBLIC_EMAILJS_USER_ID` | Public key |
-
-> Estas variables son públicas por diseño (viajan al navegador). Restringí los dominios permitidos en el panel de EmailJS para evitar abusos.
+| `NEXT_PUBLIC_WEB3FORMS_KEY` | Access key del formulario (pública por diseño) |
 
 ## Editar el contenido
 
