@@ -31,6 +31,7 @@ import {
   HiOutlineShoppingCart,
   HiOutlineCpuChip,
   HiOutlineBolt,
+  HiOutlineSparkles,
   HiOutlineMagnifyingGlass,
 } from "react-icons/hi2";
 
@@ -71,4 +72,5 @@ export const serviceIcons = {
   system: HiOutlineCpuChip,
   api: HiOutlineBolt,
   seo: HiOutlineMagnifyingGlass,
+  ai: HiOutlineSparkles,
 };

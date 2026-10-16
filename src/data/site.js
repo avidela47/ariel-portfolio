@@ -190,6 +190,12 @@ export const services = [
       "Auditoría y mejoras de rendimiento, estructura y metadatos para que Google entienda y muestre tu sitio.",
     icon: "seo",
   },
+  {
+    title: "Soluciones con IA",
+    description:
+      "Chatbots y asistentes para atención al cliente, automatización de documentos y tareas con IA, e integración de modelos como Claude y ChatGPT en tu negocio.",
+    icon: "ai",
+  },
 ];
 
 export const experience = [
