@@ -1,50 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-
-    // Or if using `src` directory:
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx,mdx}"],
   theme: {
     container: {
-      padding: {
-        DEFAULT: '15px',
-      },
-    },
-    screens: {
-      sm: '360px',   // Small screens (e.g., phones)
-      md: '900px',   // Medium screens (e.g., tablets)
-      lg: '1024px',  // Large screens (e.g., laptops)
-      xl: '1366px',  // Extra large screens (e.g., desktops)
+      center: true,
+      padding: { DEFAULT: "1.25rem", md: "2rem" },
+      screens: { lg: "1100px", xl: "1200px" },
     },
     extend: {
       colors: {
-        primary: '#131424',
-        secondary: '#393A47',
-        accent: '#F13024',
-      },
-      backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")',
-      },
-      animation: {
-        'spin-slow': 'spin 6s linear infinite',
+        ink: "#07080d",
+        surface: "#0d0f17",
+        line: "rgba(255,255,255,0.08)",
+        accent: "#36bcf7",
+        violet: "#8b5cf6",
       },
       fontFamily: {
-        poppins: [`var(--font-poppins)`, 'sans-serif'],
-        sora: [`var(--font-sora)`, 'sans-serif'],
+        sora: ["var(--font-sora)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+      },
+      backgroundImage: {
+        "accent-gradient": "linear-gradient(135deg, #36bcf7 0%, #8b5cf6 100%)",
+      },
+      keyframes: {
+        float: {
+          "0%,100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        blink: { "0%,100%": { opacity: 1 }, "50%": { opacity: 0 } },
+      },
+      animation: {
+        float: "float 6s ease-in-out infinite",
+        blink: "blink 1s step-end infinite",
       },
     },
   },
-  container: {
-    padding: {
-      DEFAULT: '15px',
-    },
-  },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [],
 };
