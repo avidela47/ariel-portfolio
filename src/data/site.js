@@ -112,7 +112,7 @@ export const featured = [
     description:
       "Juego musical con ruleta: sorteá letra, sexo e idioma para generar un artista al azar. Empaquetado como app Android.",
     tags: ["JavaScript", "Capacitor", "Android"],
-    image: "/tutti.png",
+    image: "/tutti-logo.png",
   },
 ];
 
