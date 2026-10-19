@@ -121,7 +121,7 @@ const Hero = () => {
           <div className="absolute -inset-3 sm:-inset-6 rounded-[2.5rem] bg-accent-gradient opacity-25 blur-3xl" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-gradient-to-b from-white/[0.08] to-white/[0.02] animate-float">
             <Image
-              src="/avatar.jpg"
+              src="/ariel.jpg"
               alt={`Retrato de ${profile.name}`}
               fill
               priority
