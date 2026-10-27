@@ -118,15 +118,15 @@ const Hero = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative mx-auto w-full max-w-md"
         >
-          <div className="absolute -inset-3 sm:-inset-6 rounded-[2.5rem] bg-accent-gradient opacity-25 blur-3xl" />
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-gradient-to-b from-white/[0.08] to-white/[0.02] animate-float">
+          <div className="absolute -inset-3 sm:-inset-6 rounded-full bg-accent-gradient opacity-25 blur-3xl" />
+          <div className="relative aspect-square overflow-hidden rounded-full border border-line bg-gradient-to-b from-white/[0.08] to-white/[0.02] animate-float">
             <Image
-              src="/ariel.jpg"
+              src="/perfil.jpg"
               alt={`Retrato de ${profile.name}`}
               fill
               priority
               sizes="(max-width: 1024px) 80vw, 420px"
-              className="object-cover object-top"
+              className="object-cover"
             />
           </div>
         </motion.div>
